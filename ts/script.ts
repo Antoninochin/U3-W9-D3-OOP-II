@@ -12,15 +12,14 @@ constructor(codredd: number, reddAnnuoLordo: number,tasInps: number, tasIrpef: n
 abstract getUtileTasse(): number;
 abstract getTasseInps(): number;
 abstract getTasseIrpef(): number;
-abstract getReddAnnNetto(): number;
 }
 
-abstract class Programmatore extends LavoratoreAutonomo{
-        
-    constructor(reddAnnuoLordo: number,codredd: number, tasInps: number,tasIrpef: number,){
-        super(reddAnnuoLordo, codredd , tasInps, tasIrpef)
+abstract class Programmatore extends LavoratoreAutonomo{ 
+//     constructor(reddAnnuoLordo: number,codredd: number, tasInps: number,tasIrpef: number,){
+//         super(reddAnnuoLordo, codredd , tasInps, tasIrpef)
+// }
+abstract getReddAnnNetto(): number;
 }
-getUtileTasse():number{
-    return this.reddAnnuoLordo * this.codredd /100
-}
-}
+abstract class Contabile extends LavoratoreAutonomo{ 
+    abstract getReddAnnNetto(): number;
+    }

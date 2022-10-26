@@ -8,10 +8,6 @@ class LavoratoreAutonomo {
     }
 }
 class Programmatore extends LavoratoreAutonomo {
-    constructor(reddAnnuoLordo, codredd, tasInps, tasIrpef) {
-        super(reddAnnuoLordo, codredd, tasInps, tasIrpef);
-    }
-    getUtileTasse() {
-        return this.reddAnnuoLordo * this.codredd / 100;
-    }
+}
+class Contabile extends LavoratoreAutonomo {
 }
